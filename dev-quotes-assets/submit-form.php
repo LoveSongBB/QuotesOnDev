@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * 
  *
- * Template Name: Archives Page
+ * Template Name: Submit Page
  * 
  * @package QOD_Starter_Theme
  */
