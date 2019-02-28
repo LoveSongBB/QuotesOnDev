@@ -6,7 +6,6 @@
  *
  * @link https://github.com/WP-API/rest-filter
  */
-
 /**
  * Add the necessary filter to each post type
  */
@@ -15,7 +14,6 @@ add_action( 'rest_api_init', function() {
     add_filter( 'rest_' . $post_type->name . '_query', 'qod_rest_api_filter_add_filter_param', 10, 2 );
   }
 });
-
 /**
  * Add the filter parameter
  *
@@ -45,7 +43,6 @@ function qod_rest_api_filter_add_filter_param( $args, $request ) {
   }
   return $args;
 }
-
 /**
  * Add post status, source, and source URL fields to API request
  */

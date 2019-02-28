@@ -40,3 +40,19 @@ add_action( 'wp_before_admin_bar_render', 'qod_admin_bar_render' );
 	remove_meta_box( 'trackbacksdiv', 'post', 'normal' );
 }
 add_action( 'admin_init', 'qod_remove_comments_meta_boxes' );
+
+
+function qod_homepage_quotes($query)
+{
+    if (is_admin() || !$query->is_main_query())
+        return;
+
+
+    if(is_home()) {
+        // Display only 1 post for the original blog archive
+        $query->set('posts_per_page', 1);
+        return;
+    }
+
+}
+add_action('pre_get_posts', 'qod_homepage_quotes', 1);

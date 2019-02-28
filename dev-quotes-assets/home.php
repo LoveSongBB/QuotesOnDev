@@ -16,6 +16,13 @@ get_header(); ?>
             get_template_part('template-parts/content', 'none');
         endif;
         ?>
-    </main><!-- #main -->
+	</main><!-- #main -->
+	
+
+	<?php if (is_home() || is_single()): ?>
+    <button type="button" id="new-quote-button">Show Me Another!</button>
+<?php endif; ?>
+
+	
 </div><!-- #primary -->
 <?php get_footer(); ?>
