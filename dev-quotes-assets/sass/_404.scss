@@ -1,0 +1,14 @@
+.search-field {
+    background-color: $color__main_theme;
+    border: 2px solid $color__brand-main;
+    color: $color__background-body;
+    padding: .5rem .5rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 3px;
+ 
+}
+
+fieldset {
+    border: none;
+}
