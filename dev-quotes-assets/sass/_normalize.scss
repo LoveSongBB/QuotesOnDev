@@ -1,5 +1,5 @@
 html {
-	font-family: sans-serif;
+	font-family: "Exo";
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
@@ -70,7 +70,7 @@ h1 {
 
 mark {
 	background: #ff0;
-	color: #000;
+	color: $color__main_theme;
 }
 
 small {

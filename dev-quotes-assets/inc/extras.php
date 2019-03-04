@@ -47,12 +47,23 @@ function qod_homepage_quotes($query)
     if (is_admin() || !$query->is_main_query())
         return;
 
-
     if(is_home()) {
-        // Display only 1 post for the original blog archive
         $query->set('posts_per_page', 1);
         return;
     }
 
 }
 add_action('pre_get_posts', 'qod_homepage_quotes', 1);
+
+function qod_cat_tags($query)
+{
+    if (is_admin() || !$query->is_main_query())
+        return;
+
+    if(is_category() || is_tag()) {
+        $query->set('posts_per_page', 5);
+        return;
+    }
+
+}
+add_action('pre_get_posts', 'qod_cat_tags', 1);

@@ -2,7 +2,7 @@
 /**
  * The template for displaying archive pages.
  *
- * Template Name: Archives Page
+ * 
  * 
  * @package QOD_Starter_Theme
  */
@@ -29,7 +29,8 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
+			<?php qod_numbered_pagination(); ?>
+
 
 		<?php else : ?>
 
