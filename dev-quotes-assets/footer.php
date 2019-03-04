@@ -7,7 +7,7 @@
 ?>
 <html>
 	<body>
-			</div><!-- #content -->
+			</div>
 				<footer id="colophon" class="site-footer" role="contentinfo">
 					<div class="site-info">
 						<div class="navigation">
@@ -19,9 +19,9 @@
                 				</div>    
 							</nav>
 						</div>
-					</div><!-- .site-info -->
-				</footer><!-- #colophon -->
-			</div><!-- #page -->
+					</div>
+				</footer>
+			</div>
 		<?php wp_footer(); ?>
 	</body>
 </html>

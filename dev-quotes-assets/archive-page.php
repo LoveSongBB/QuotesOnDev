@@ -47,6 +47,6 @@ get_header(); ?>
                             'format' => 'list'));?>
                 </div>
             </section>
-        </main><!-- #main -->
-    </div><!-- #prim -->
+        </main>
+    </div>
 <?php get_footer(); ?>

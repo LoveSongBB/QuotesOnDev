@@ -14,24 +14,19 @@ get_header(); ?>
 
 <div class="error-container">
 
-
                 <header class="page-header">
                     <h1 class="page-title"><?php echo esc_html('Oops! That page can&rsquo;t be found.'); ?></h1>
-                </header><!-- .page-header -->
+                </header>
 
                 <div class="page-content">
                     <p><?php echo esc_html('It looks like nothing was found at this location. Maybe try a search?'); ?></p>
 
 					<?php get_search_form(); ?>
-                </div><!-- .page-content -->
+                </div>
 
 				<?php get_search_form(); ?>
-
 </div>
-            </section><!-- .error-404 -->
-        </main><!-- #main -->
-    </div><!-- #primary -->
-
-
-	
+            </section>
+        </main>
+    </div>
 <?php get_footer(); ?>

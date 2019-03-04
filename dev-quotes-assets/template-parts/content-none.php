@@ -4,13 +4,12 @@
  *
  * @package QOD_Starter_Theme
  */
-
 ?>
 
 <section class="no-results not-found">
 	<header class="page-header">
 		<h1 class="page-title"><?php esc_html( 'Nothing Found' ); ?></h1>
-	</header><!-- .page-header -->
+	</header>
 
 	<div class="page-content">
 		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
@@ -28,7 +27,5 @@
 			<?php get_search_form(); ?>
 
 		<?php endif; ?>
-	</div><!-- .page-content -->
-
-	
-</section><!-- .no-results -->
+	</div>
+</section>

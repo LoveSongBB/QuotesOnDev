@@ -4,7 +4,6 @@
  *
  * Template name: Submit Template
  * 
- * 
  * @package QOD_Starter_Theme
  */
 get_header(); ?>
@@ -17,7 +16,7 @@ get_header(); ?>
     <div class= "entry-content">
             <header>
                 <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
-            </header><!-- page header -->
+            </header>
 
             <?php if (is_user_logged_in() && current_user_can('edit_posts')): ?>
 
@@ -40,7 +39,6 @@ get_header(); ?>
                         <input type="url" id="quote_source_url" name="quote-source-url">
                     </div>
                     <input id="submit" type="submit" value="Submit Quote">
-
                 </form>
 
                 <p class="submit-success-message" style="display:none;"></p>
@@ -52,13 +50,10 @@ get_header(); ?>
                 </p>
 
             <?php endif; ?>
-
 </div>
+        </div>
+        </section>
 
-        </div> <!--- form content ---> 
-        </section><!-- .quote-submission-form -->
-
-    </main><!-- #main -->
-</div><!-- #primary -->
-
+    </main>
+</div>
 <?php get_footer(); ?>

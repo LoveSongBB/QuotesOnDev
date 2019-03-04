@@ -11,10 +11,10 @@
         justify-content: flex-end;
       }
     }
-    }
+  }
 p {
-        font-weight: 300;
-        @include tablet {
-          padding-left: 1rem;
-        }
+      font-weight: 300;
+      @include tablet {
+      padding-left: 1rem;
+      }
   }

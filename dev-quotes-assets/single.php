@@ -4,7 +4,6 @@
  *
  * @package QOD_Starter_Theme
  */
-
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -16,9 +15,7 @@ get_header(); ?>
 
 			<?php the_post_navigation(); ?>
 
-		<?php endwhile; // End of the loop. ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
+		<?php endwhile;?>
+		</main>
+	</div>
 <?php get_footer(); ?>

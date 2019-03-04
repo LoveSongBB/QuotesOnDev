@@ -14,14 +14,11 @@ get_header(); ?>
             endwhile;
         else:
             get_template_part('template-parts/content', 'none');
-        endif;
-		?>
-	
+        endif;?>
 	</main>
 	</div>
 
 	<?php if (is_home() || is_single()): ?>
     <button type="button" id="new-quote-button">Show Me Another!</button>
 <?php endif; ?>
-	
 <?php get_footer(); ?>
